@@ -25,7 +25,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.use(express.static(__dirname + '/front-end/dist'));
+app.use(express.static(__dirname + '/angular/dist'));
 
 //Routes 
 app.use('/email', email);
